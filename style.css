@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Madimi One", sans-serif;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+  background: #b0dce9;
+  color: #f3f1f1;
+}
+
+#Header{
+  width: 100%;
+  height:100vh;
+  background-image: url("peakpx.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px
+}
+
+.container{
+  padding: 10px 10%;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: 140px;
+}
+
+nav ul li{
+  display: inline;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a{
+  color: #272626;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative; 
+}
+
+nav ul li a::after{
+  content: "";
+  width: 0%;
+  height: 3px;
+  background: rgb(83, 204, 120);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;  
+}
+
+.text-message{
+  margin-top: 20%;
+  font-size: 30px;
+  color: #272626;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 12px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  padding: 20px 10px;
+}
+
+.text-message:hover::after{
+  display:  block;
+}
+
+
+#about{
+  padding: 80px 0px;
+  color: #272626;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.about-col-2{
+  flex-basis: 60%;
+}
+
+.subme{
+  font-size: 60px;
+  font-weight: 600;
+  color: rgb(83, 204, 120);
+}
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background-color: rgb(83, 204, 120);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+  width: 50%;
+}
+
+.tab-contents ul li{
+  list-style: none;
+  margin: 10px 0px;
+}
+
+.tab-contents ul li span{
+  color: rgb(83, 204, 120);
+  font-size: 14px;
+}
+ 
+.tab-contents{
+  display: none;
+}
+
+.tab-contents.active-tab{
+  display: block;
+}
+
+#Services{
+  color: #272626;
+  padding: 30px 0;
+  margin-left: 120px;
+}
+
+.Service-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr ));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.Service-list div{
+  margin-right: 10px;
+  padding: 40px;
+  font-size: 13px;
+  border-radius: 5px;
+  background-color: #82a6bd;
+  color: #272626;
+  font-weight: 400;
+  transition: 0.5s;
+  box-shadow: 3px 3px 5px;
+}
+
+.Service-list div h2{
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.Service-list div a{
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.Service-list div:hover{
+  background: rgb(83, 105, 204);
+  transform: translateY(-15px);
+}
+
+.tab-contents ul{
+  background-color: #82a6bd;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: auto;
+  margin-right: 50%;
+  display: block;
+  box-shadow: 3px 3px 5px;
+} 
+
