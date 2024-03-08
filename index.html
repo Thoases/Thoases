@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="Header">
+        <div class="container">
+            <nav>
+                <img src="images-removebg-preview.png" class="Logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                </ul>
+            </nav>
+            <div class="text-message">
+                <p>Student:</p>
+                <h1>Hi, Im <span>John Paul C. Enriquez</span> Grade 11 student my goal is to become a professional
+                    developer.</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="download (1).jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subme">About me</h1>
+                    <p>Hi there, I'm [Your Name], a [year in school] student at [Your University] studying [Your Major].
+                        I'm passionate about [specific area of interest within your major or a hobby], and I'm always
+                        looking for new ways to learn and grow.
+
+                        Throughout my academic career, I've had the opportunity to [list some of your accomplishments,
+                        such as academic achievements, leadership roles, or extracurricular activities]. These
+                        experiences have helped me develop [list some of your skills or qualities, such as leadership,
+                        teamwork, or communication].
+
+                        I'm currently working on [describe any projects or research you're involved in], and I'm excited
+                        to explore [describe your future goals or plans]. When I'm not studying or working on projects,
+                        you can find me [describe your hobbies or interests outside of school].
+
+                        I believe that [mention a personal or professional value or belief that's important to you]. I'm
+                        always looking for new opportunities to learn and grow, so feel free to reach out to me at [your
+                        email address]. Let's see how we can help each other succeed!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Game developer:</span><br>Building games like ROS</li>
+                            <li><span>Cooking:</span><br>I can cook you pero noodles rapud</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Game developer:</span><br>Still learing</li>
+                            <li><span>Web developer:</span><br>Still learning</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>SRNHS:</span><br>Graduate</li>
+                            <li><span>GRADUATED:</span><br>GRADE 10</li>
+                            <li><span>Status:</span><br>Senior High school</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Services">
+        <div class="container"></div>
+        <h1 class="sub-title">My Services:</h1>
+        <div class="Service-list">
+            <div>
+                <h2>Web developer:</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate mollitia labore totam magni
+                    architecto suscipit libero numquam harum veniam recusandae dicta repudiandae, cum minima asperiores
+                    officiis id vitae natus nemo.</p>
+                <a href="">learn more</a>
+            </div>
+            <div>
+                <h2>Cooking:</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores saepe eligendi quae id sed, nostrum
+                    illo vero asperiores porro, nisi, omnis quos non. Facere corrupti quos odio quia ullam animi.</p>
+                <a href="">learn more</a>
+            </div>
+            <div>
+                <h2>Game developer:</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam porro repellat vero minima, iure
+                    adipisci et, aut repudiandae impedit quae assumenda ipsum fugiat vitae consequatur possimus culpa?
+                    Ratione, ad vitae!</p>
+                <a href="">learn more</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+
+</script>
+
+</html>
