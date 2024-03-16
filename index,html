@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>   
+    <header>
+        <img src="download__1_-removebg-preview.png" class="logo">
+        <nav>
+            <a href="">Home</a>
+            <a href="">About</a>           
+            <a href="">Projects</a>       
+            <a href="">Contacts</a>           
+        </nav>
+    </header>
+    <main>
+        <div class="main">
+            <h1>Hi im a web developer</h1>
+            <p>Please scroll down to see more</p>
+        </div>
+        
+    </main>
+    <div class="parallax">
+        <div style="height:1000px;background-color:rgb(0, 0, 0);" class="spara">
+            <img src="Cute Anime Character.jpg" alt="" class="logo1">
+            <h1>lorem</h1>
+           <div>
+            
+           </div> 
+        </div>
+    </div>
+    </main>
+    
+</body>
+</html>
